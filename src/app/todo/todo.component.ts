@@ -7,7 +7,6 @@ import {
   MatSnackBarHorizontalPosition,
   MatSnackBarVerticalPosition,
 } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 @Component({
   selector: 'app-todo',
@@ -83,6 +82,7 @@ export class TodoComponent implements OnInit {
   getTodo() {
     this.todoService.getTodo().subscribe((data) => {
       this.TodoData = data;
+      console.log(this.TodoData);
       this.totalItems = this.TodoData.length;
       this.totalPages = Math.ceil(this.totalItems / this.pageSize);
       this.updatePageNumbers();

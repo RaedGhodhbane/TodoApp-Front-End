@@ -16,10 +16,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { TodoComponent } from './todo/todo.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
+    TodoComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

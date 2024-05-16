@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit {
           
         }, 
         error => {
-          alert(error.error.error)
-          console.log(error.error.error)      
+          this.loginError = "Invalid email/password";
+          console.log(error.error.error);
         }    
   );
   }

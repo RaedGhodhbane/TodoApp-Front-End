@@ -71,7 +71,7 @@ export class TodoComponent implements OnInit {
       const todoRequest: Todo = {
         name: formValue.name,
         description: formValue.description,
-        completed: false
+        completed: true
       };
       this.todoService.createTodo(todoRequest).subscribe(() => {
         this.getTodo();
